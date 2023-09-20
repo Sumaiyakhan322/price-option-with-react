@@ -45,11 +45,11 @@ const OurNav = () => {
     }
    
   </div>
-   <ul className="md:flex ">
+   {/* <ul className="md:flex ">
    {
       routes.map(route=> <li className="mr-10" key={route.id}><a href={'route.path'}>{route.name}</a></li>)
     }
-   </ul>
+   </ul> */}
   </nav>;
 };
 
