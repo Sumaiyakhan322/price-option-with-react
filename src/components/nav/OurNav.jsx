@@ -38,28 +38,32 @@ const OurNav = () => {
     },
   ];
 
-  return <nav className='p-6 bg-gray-500'>
+  return(
+   <nav className='p-6 bg-gray-500'>
   <div className='text-2xl md:hidden' onClick={()=>setOpen(!open)}>
     {
       open===true? <RiCloseCircleLine></RiCloseCircleLine>: <RiMenu2Line className=''></RiMenu2Line>
     }
    
   </div>
-<<<<<<< HEAD
-   <ul className={`md:flex absolute p-6 bg-gray-500 md:static duration-1000 ${open?'top-14':'-top-60'}`}>
-=======
-   {/* <ul className="md:flex ">
->>>>>>> 0c4e41bc721f38ecda6b7e54da6faf59e2a97038
+
+
+
+<ul className={`md:flex absolute p-6 bg-gray-500 md:static duration-1000 ${open?'top-14':'-top-60'}`}>
+  
    {
       routes.map(route=> <li className="mr-10 " key={route.id}><a href={'route.path'} className='hover:bg-gray-800 p-4 hover:text-white hover:rounded-lg'>{route.name}</a></li>)
     }
-<<<<<<< HEAD
-   </ul>
+    </ul>
+
+   
  
-=======
-   </ul> */}
->>>>>>> 0c4e41bc721f38ecda6b7e54da6faf59e2a97038
-  </nav>;
-};
+
+ 
+
+  </nav>
+  )
+  }
+  
 
 export default OurNav;
